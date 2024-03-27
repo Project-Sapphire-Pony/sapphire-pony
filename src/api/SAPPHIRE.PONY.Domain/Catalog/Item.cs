@@ -1,10 +1,11 @@
+
 namespace SAPPHIRE.PONY.Domain.Catalog;
 
 public class Item {
     public int Id { get; set; }
-    public string Name { get; set; }
-    public string Description { get; set; }
-    public string Brand { get; set; }
+    public string? Name { get; set; }
+    public string? Description { get; set; }
+    public string? Brand { get; set; }
     public decimal Price { get; set; }
     public List<Rating> Ratings { get; set; } = new List<Rating>();
 
@@ -33,10 +34,9 @@ public class Item {
 public class Rating
 {
     public int Stars { get; set; }
-    public string userName { get; set; }
+    public string? userName { get; set; }
     public string? Review {get; set;
     }
-
     public Rating(int stars, string userName, string review){
     if(stars < 1 || stars > 5){
         throw new ArgumentException("Stars must be between 1 and 5");
