@@ -29,8 +29,13 @@ namespace SAPPHIRE.PONY.Api.Controllers {
         }
 
         [HttpPost]
-        public IActionResult CreateItem (Item item) {
+        public IActionResult CreateItem(Item item) {
             return CreatedAtAction(nameof(GetItem), new { id = 42 }, item);
+        }
+
+        [HttpPost("{id:int}/ratings")]
+        public IActionResult AddRating(int id, Rating rating) {
+            return Ok();
         }
     }
 }
