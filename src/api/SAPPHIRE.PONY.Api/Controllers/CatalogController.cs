@@ -37,6 +37,16 @@ namespace SAPPHIRE.PONY.Api.Controllers {
         public IActionResult AddRating(int id, Rating rating) {
             return Ok();
         }
+
+        [HttpPost("{id:int}")]
+        public IActionResult UpdateItem(int id, Item item) {
+            return NoContent();
+        }
+
+        [HttpDelete("{id:int}")]
+        public IActionResult DeleteItem(int id) {
+            return NoContent();
+        }
     }
 }
 

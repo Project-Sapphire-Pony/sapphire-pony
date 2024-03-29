@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SAPPHIRE.PONY.Domain\SAPPHIRE.PONY.Domain.csproj" />
+    <ProjectReference Include="..\SAPPHIRE.PONY.Data\SAPPHIRE.PONY.Data.csproj" />
   </ItemGroup>
 
   <ItemGroup>
