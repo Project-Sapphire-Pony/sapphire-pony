@@ -1,23 +1,23 @@
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
+using SAPPHIRE.PONY.Data;
 using SAPPHIRE.PONY.Domain.Catalog;
 
 namespace SAPPHIRE.PONY.Api.Controllers {
     [ApiController]
     [Route("api/[controller]")]
     public class CatalogController : ControllerBase{
+        
+        private readonly StoreContext _context;
+
+        public CatalogController(StoreContext context){
+            _context = context;
+        }
+
         [HttpGet]
         public IActionResult GetItems()
         {
-            var items = new[]
-            {
-                new Item(Name: "Item 1", Description: "Description 1", Brand: "Brand 1", price: 100.00m),
-                new Item(Name: "Item 2", Description: "Description 2", Brand: "Brand 2", price: 200.00m),
-                new Item(Name: "Item 3", Description: "Description 3", Brand: "Brand 3", price: 300.00m),
-                new Item(Name: "Item 4", Description: "Description 4", Brand: "Brand 4", price: 400.00m),
-                new Item(Name: "Item 5", Description: "Description 5", Brand: "Brand 5", price: 500.00m)
-            };
-            return Ok(items);
+            return Ok(_context.Items);
         }
         [HttpGet("{id:int}")]
         public IActionResult GetItem(int id) {
@@ -47,6 +47,25 @@ namespace SAPPHIRE.PONY.Api.Controllers {
         public IActionResult DeleteItem(int id) {
             return NoContent();
         }
+
+           [HttpPut("{id:int}")]
+        public IActionResult UpdateItem1(int id, Item item){
+            if(id != item.Id){
+                return BadRequest();
+            }
+
+            var existingItem = _context.Items.Find(id);
+            if(existingItem == null)
+            {
+                return NotFound();
+            }
+
+            _context.Entry(existingItem).CurrentValues.SetValues(item);
+            _context.SaveChanges();
+            return Ok(item);
+        }
+     
+
     }
 }
 
