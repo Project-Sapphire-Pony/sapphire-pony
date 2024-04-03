@@ -8,7 +8,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<StoreContext>(options =>
 {
     options.UseSqlite("Data Source=../store.db",
-    m  => m.MigrationsAssembly("Sapphire.Pony.Api"));
+    m  => m.MigrationsAssembly("SAPPHIRE.PONY.Api"));
 });
 
 builder.Services.AddSwaggerGen(c =>
