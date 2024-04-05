@@ -12,7 +12,7 @@ namespace SAPPHIRE.PONY.Api.Migrations
 {
     [DbContext(typeof(StoreContext))]
     [Migration("20240403194642_init")]
-    partial class init
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

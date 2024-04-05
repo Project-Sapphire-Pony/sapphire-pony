@@ -13,7 +13,7 @@ builder.Services.AddDbContext<StoreContext>(options =>
 
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Sapphire Pony API", Version = "v1"});
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "SAPPHIRE PONY API", Version = "v1"});
 });
 
 var app = builder.Build();
@@ -21,7 +21,7 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sapphire Pony API V1");
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "SAPPHIRE PONY API V1");
 });
 
 app.MapControllers();

@@ -21,12 +21,9 @@ namespace SAPPHIRE.PONY.Api.Controllers {
         }
         [HttpGet("{id:int}")]
         public IActionResult GetItem(int id) {
-            var item = new Item("Item 1", "Description 1", "Brand 1", 100.00m) {
-                Id = id
-            };
-
+            var item = _context.Items.Find(id);
             return Ok(item);
-        }
+         }
 
         [HttpPost]
         public IActionResult CreateItem(Item item) {
