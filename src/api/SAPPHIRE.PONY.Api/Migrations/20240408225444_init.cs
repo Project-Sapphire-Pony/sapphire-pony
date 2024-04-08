@@ -7,7 +7,7 @@
 namespace SAPPHIRE.PONY.Api.Migrations
 {
     /// <inheritdoc />
-    public partial class Init : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,9 +18,9 @@ namespace SAPPHIRE.PONY.Api.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", nullable: true),
-                    Description = table.Column<string>(type: "TEXT", nullable: true),
-                    Brand = table.Column<string>(type: "TEXT", nullable: true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
+                    Description = table.Column<string>(type: "TEXT", nullable: false),
+                    Brand = table.Column<string>(type: "TEXT", nullable: false),
                     Price = table.Column<decimal>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
@@ -35,8 +35,8 @@ namespace SAPPHIRE.PONY.Api.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Stars = table.Column<int>(type: "INTEGER", nullable: false),
-                    userName = table.Column<string>(type: "TEXT", nullable: true),
-                    Review = table.Column<string>(type: "TEXT", nullable: true),
+                    UserName = table.Column<string>(type: "TEXT", nullable: false),
+                    Review = table.Column<string>(type: "TEXT", nullable: false),
                     ItemId = table.Column<int>(type: "INTEGER", nullable: true)
                 },
                 constraints: table =>
@@ -54,10 +54,10 @@ namespace SAPPHIRE.PONY.Api.Migrations
                 columns: new[] { "Id", "Brand", "Description", "Name", "Price" },
                 values: new object[,]
                 {
-                    { 1, null, null, null, 0m },
-                    { 2, null, null, null, 0m },
-                    { 3, null, null, null, 0m },
-                    { 4, null, null, null, 0m }
+                    { 1, "Brand 1", "Description 1", "Item 1", 100.00m },
+                    { 2, "Brand 2", "Description 2", "Item 2", 200.00m },
+                    { 3, "Brand 3", "Description 3", "Item 3", 300.00m },
+                    { 4, "Brand 4", "Description 4", "Item 4", 400.00m }
                 });
 
             migrationBuilder.CreateIndex(

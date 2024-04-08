@@ -1,7 +1,7 @@
 GET http://localhost:5006/api/catalog HTTP/1.1 
 
 ###
-GET http://localhost:5006/api/catalog/42 HTTP/1.1
+GET http://localhost:5006/api/catalog/1 HTTP/1.1
 
 ###
 GET http://localhost:5006/api/catalog/test HTTP/1.1

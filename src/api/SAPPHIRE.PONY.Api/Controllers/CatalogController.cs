@@ -22,6 +22,9 @@ namespace SAPPHIRE.PONY.Api.Controllers {
         [HttpGet("{id:int}")]
         public IActionResult GetItem(int id) {
             var item = _context.Items.Find(id);
+            if (item == null){
+                return NotFound();
+            }
             return Ok(item);
          }
 

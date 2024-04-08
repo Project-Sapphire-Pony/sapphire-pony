@@ -11,14 +11,41 @@ using SAPPHIRE.PONY.Data;
 namespace SAPPHIRE.PONY.Api.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20240403194642_init")]
-    partial class Init
+    [Migration("20240408225444_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.3");
+
+            modelBuilder.Entity("Rating", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("ItemId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Review")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Stars")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ItemId");
+
+                    b.ToTable("Rating");
+                });
 
             modelBuilder.Entity("SAPPHIRE.PONY.Domain.Catalog.Item", b =>
                 {
@@ -27,12 +54,15 @@ namespace SAPPHIRE.PONY.Api.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Brand")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("Price")
@@ -46,51 +76,38 @@ namespace SAPPHIRE.PONY.Api.Migrations
                         new
                         {
                             Id = 1,
-                            Price = 0m
+                            Brand = "Brand 1",
+                            Description = "Description 1",
+                            Name = "Item 1",
+                            Price = 100.00m
                         },
                         new
                         {
                             Id = 2,
-                            Price = 0m
+                            Brand = "Brand 2",
+                            Description = "Description 2",
+                            Name = "Item 2",
+                            Price = 200.00m
                         },
                         new
                         {
                             Id = 3,
-                            Price = 0m
+                            Brand = "Brand 3",
+                            Description = "Description 3",
+                            Name = "Item 3",
+                            Price = 300.00m
                         },
                         new
                         {
                             Id = 4,
-                            Price = 0m
+                            Brand = "Brand 4",
+                            Description = "Description 4",
+                            Name = "Item 4",
+                            Price = 400.00m
                         });
                 });
 
-            modelBuilder.Entity("SAPPHIRE.PONY.Domain.Catalog.Rating", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("ItemId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Review")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Stars")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("userName")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ItemId");
-
-                    b.ToTable("Rating");
-                });
-
-            modelBuilder.Entity("SAPPHIRE.PONY.Domain.Catalog.Rating", b =>
+            modelBuilder.Entity("Rating", b =>
                 {
                     b.HasOne("SAPPHIRE.PONY.Domain.Catalog.Item", null)
                         .WithMany("Ratings")
