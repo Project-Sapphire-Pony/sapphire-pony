@@ -14,5 +14,5 @@ Content-Type: application/json
     "name": "Test",
     "description": "Test description",
     "brand": "Test brand",
-    "price": 10.00
+    "price": 10.0
 }
