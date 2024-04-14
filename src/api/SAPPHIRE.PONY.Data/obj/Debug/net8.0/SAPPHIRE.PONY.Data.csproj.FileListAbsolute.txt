@@ -1,0 +1,16 @@
+C:\AMIS\sapphire-pony\src\api\SAPPHIRE.PONY.Data\bin\Debug\net8.0\SAPPHIRE.PONY.Data.deps.json
+C:\AMIS\sapphire-pony\src\api\SAPPHIRE.PONY.Data\bin\Debug\net8.0\SAPPHIRE.PONY.Data.dll
+C:\AMIS\sapphire-pony\src\api\SAPPHIRE.PONY.Data\bin\Debug\net8.0\SAPPHIRE.PONY.Data.pdb
+C:\AMIS\sapphire-pony\src\api\SAPPHIRE.PONY.Data\bin\Debug\net8.0\SAPPHIRE.PONY.Domain.dll
+C:\AMIS\sapphire-pony\src\api\SAPPHIRE.PONY.Data\bin\Debug\net8.0\SAPPHIRE.PONY.Domain.pdb
+C:\AMIS\sapphire-pony\src\api\SAPPHIRE.PONY.Data\obj\Debug\net8.0\SAPPHIRE.PONY.Data.csproj.AssemblyReference.cache
+C:\AMIS\sapphire-pony\src\api\SAPPHIRE.PONY.Data\obj\Debug\net8.0\SAPPHIRE.PONY.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\AMIS\sapphire-pony\src\api\SAPPHIRE.PONY.Data\obj\Debug\net8.0\SAPPHIRE.PONY.Data.AssemblyInfoInputs.cache
+C:\AMIS\sapphire-pony\src\api\SAPPHIRE.PONY.Data\obj\Debug\net8.0\SAPPHIRE.PONY.Data.AssemblyInfo.cs
+C:\AMIS\sapphire-pony\src\api\SAPPHIRE.PONY.Data\obj\Debug\net8.0\SAPPHIRE.PONY.Data.csproj.CoreCompileInputs.cache
+C:\AMIS\sapphire-pony\src\api\SAPPHIRE.PONY.Data\obj\Debug\net8.0\SAPPHIRE.PONY.Data.sourcelink.json
+C:\AMIS\sapphire-pony\src\api\SAPPHIRE.PONY.Data\obj\Debug\net8.0\SAPPHIRE.PONY.Data.csproj.CopyComplete
+C:\AMIS\sapphire-pony\src\api\SAPPHIRE.PONY.Data\obj\Debug\net8.0\SAPPHIRE.PONY.Data.dll
+C:\AMIS\sapphire-pony\src\api\SAPPHIRE.PONY.Data\obj\Debug\net8.0\refint\SAPPHIRE.PONY.Data.dll
+C:\AMIS\sapphire-pony\src\api\SAPPHIRE.PONY.Data\obj\Debug\net8.0\SAPPHIRE.PONY.Data.pdb
+C:\AMIS\sapphire-pony\src\api\SAPPHIRE.PONY.Data\obj\Debug\net8.0\ref\SAPPHIRE.PONY.Data.dll

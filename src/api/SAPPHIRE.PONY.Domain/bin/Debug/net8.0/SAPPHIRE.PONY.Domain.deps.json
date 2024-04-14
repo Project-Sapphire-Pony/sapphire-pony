@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SAPPHIRE.PONY.Domain/1.0.0": {
+        "runtime": {
+          "SAPPHIRE.PONY.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SAPPHIRE.PONY.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

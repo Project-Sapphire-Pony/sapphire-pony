@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SAPPHIRE.PONY.Api.props" />
+</Project>
