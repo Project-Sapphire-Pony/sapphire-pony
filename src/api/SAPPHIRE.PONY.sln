@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAPPHIRE.PONY.Api", "SAPPHI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAPPHIRE.PONY.Data", "SAPPHIRE.PONY.Data\SAPPHIRE.PONY.Data.csproj", "{A32F1F08-B875-4DA1-BF8C-6CF87BE05A44}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{30ACEE93-9243-46C8-8882-FD367A7AC57D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAPPHIRE.PONY.Domain.Tests", "tests\SAPPHIRE.PONY.Domain.Tests\SAPPHIRE.PONY.Domain.Tests.csproj", "{7E55F833-AE9E-4771-B9F7-AB9E727874E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,12 @@ Global
 		{A32F1F08-B875-4DA1-BF8C-6CF87BE05A44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A32F1F08-B875-4DA1-BF8C-6CF87BE05A44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A32F1F08-B875-4DA1-BF8C-6CF87BE05A44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E55F833-AE9E-4771-B9F7-AB9E727874E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E55F833-AE9E-4771-B9F7-AB9E727874E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E55F833-AE9E-4771-B9F7-AB9E727874E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E55F833-AE9E-4771-B9F7-AB9E727874E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7E55F833-AE9E-4771-B9F7-AB9E727874E8} = {30ACEE93-9243-46C8-8882-FD367A7AC57D}
 	EndGlobalSection
 EndGlobal
