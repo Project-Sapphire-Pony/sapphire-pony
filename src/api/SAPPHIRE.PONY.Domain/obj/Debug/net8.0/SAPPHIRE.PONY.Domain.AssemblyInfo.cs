@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SAPPHIRE.PONY.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43ab39fadc139fd4a5ae29b940d82e6931e3fc1a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf89f1c6d5a8cff6ae24cbdc5f26f527fb28f985")]
 [assembly: System.Reflection.AssemblyProductAttribute("SAPPHIRE.PONY.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SAPPHIRE.PONY.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
